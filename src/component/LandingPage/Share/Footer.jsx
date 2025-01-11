@@ -4,10 +4,9 @@ const Footer = () => {
       <footer className=" bg-green-100 footer text-base-content p-10">
         <aside>
           <div>
-            <h1 className="text-4xl">logo</h1>
+            <h1 className="text-4xl"> Fresh Harvests Shop</h1>
           </div>
           <p>
-            Fresh Harvests
             <br />
           </p>
         </aside>

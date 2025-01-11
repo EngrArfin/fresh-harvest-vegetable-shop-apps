@@ -1,4 +1,13 @@
+"use client";
+
+import Login from "@/app/login/page";
+import { useState } from "react";
+
 const NavBar = () => {
+  const [showSignupModal, setShowSignupModal] = useState(false);
+
+  const handleOpenModal = () => setShowSignupModal(true);
+  const handleCloseModal = () => setShowSignupModal(false);
   return (
     <div className="navbar bg-green-100">
       <div className="navbar-start">
@@ -37,7 +46,7 @@ const NavBar = () => {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">Fresh Harvests</a>
+        <a className="btn btn-ghost text-xl">Fresh Harvests Shop</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
@@ -58,7 +67,7 @@ const NavBar = () => {
       </div>
       <div className="navbar-end">
         <div>
-          <a className="btn">Fevorit</a>
+          <a className="">Fevorites</a>
         </div>
         <div className="flex justify-center items-center ml-2 mr-2 ">
           <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
@@ -84,7 +93,13 @@ const NavBar = () => {
         </div>
 
         <div>
-          <a className="btn">Sign in</a>
+          <button
+            onClick={handleOpenModal}
+            className="mt-6 px-6 py-3 bg-green-400 text-white border border-white font-semibold rounded-lg  "
+          >
+            Sign In
+          </button>
+          {showSignupModal && <Login handleCloseModal={handleCloseModal} />}
         </div>
       </div>
     </div>

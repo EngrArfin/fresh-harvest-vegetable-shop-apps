@@ -1,5 +1,6 @@
 import Image from "next/image";
 import product1 from "../../../UI/cardimg/product1.png";
+import Link from "next/link";
 
 const CartCard = () => {
   return (
@@ -16,12 +17,13 @@ const CartCard = () => {
       <div className="text-center mt-4">
         <h2 className="text-lg font-medium text-gray-800">Mushroom</h2>
         <p className="text-sm text-gray-600 mt-2 mb-2">$2.3/kg</p>
-        <button
+        <Link
+          href="/details"
           className="w-[258px] h-[45px] text-black text-sm font-medium rounded-[8px] border border-[#D9D9D9] hover:bg-yellow-500 
              py-[12px] px-[84px] flex items-center justify-center gap-[10px]"
         >
           Add to cart
-        </button>
+        </Link>
       </div>
     </div>
   );
