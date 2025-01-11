@@ -13,7 +13,6 @@ const TestMonial = () => {
         }
       />
       <div className="flex items-center justify-between max-w-screen-xl mx-auto mt-10">
-        {/* Testimonial Image */}
         <div className="w-[40%] mt-[58px] ml-[213px]">
           <Image
             src={testmonial}

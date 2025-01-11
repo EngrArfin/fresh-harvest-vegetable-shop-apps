@@ -34,7 +34,7 @@ const Footer = () => {
           </a>
         </nav>
       </footer>
-      <footer className="footer bg-base-200 text-base-content border-base-300 border-t px-10 py-4">
+      <footer className="footer bg-green-100  text-base-content border-base-300 border-t px-10 py-4">
         <aside className="grid-flow-col items-center">
           <p>© Copyright 2024, All Rights Reserved by Banana Studio</p>
         </aside>
