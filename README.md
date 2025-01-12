@@ -32,14 +32,14 @@ An online vegetable shop where users can browse, select, and purchase fresh vege
    git clone https://github.com/EngrArfin/fresh-harvest-vegetable-shop-apps.git
 ``
 
-``bash
+```bash
 cd fresh-harvest-vegetable-shop-apps
-``
+```
 
-``bash
+```bash
 npm install
-``
-``bash
+```
+```bash
 
 npm run dev
-``
+```
